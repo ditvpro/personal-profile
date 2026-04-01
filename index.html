@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Di Nguyen — Personal Profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Nav -->
+  <nav class="navbar">
+    <a href="#" class="nav-logo">DN</a>
+    <ul class="nav-links">
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#blog">Blog</a></li>
+    </ul>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+      <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="5"/>
+        <line x1="12" y1="1" x2="12" y2="3"/>
+        <line x1="12" y1="21" x2="12" y2="23"/>
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+        <line x1="1" y1="12" x2="3" y2="12"/>
+        <line x1="21" y1="12" x2="23" y2="12"/>
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+      </svg>
+      <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="avatar">
+        <span>DN</span>
+      </div>
+      <h1 class="hero-title">
+        Hi, I'm <span class="gradient-text">Di Nguyen</span>
+      </h1>
+      <p class="hero-tagline">Full-stack Developer & Creative Thinker</p>
+      <p class="hero-description">
+        Passionate about building beautiful, performant web applications
+        that make a difference.
+      </p>
+      <div class="hero-cta">
+        <a href="#portfolio" class="btn btn-primary">View My Work</a>
+        <a href="#blog" class="btn btn-outline">Read Blog</a>
+      </div>
+    </div>
+    <div class="hero-bg-gradient"></div>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="section" id="portfolio">
+    <div class="container">
+      <h2 class="section-title fade-in">Portfolio</h2>
+      <p class="section-subtitle fade-in">A selection of projects I've worked on</p>
+      <div class="card-grid">
+
+        <article class="card fade-in">
+          <div class="card-image" style="background: linear-gradient(135deg, #667eea, #764ba2);">
+            <span class="card-emoji">🛒</span>
+          </div>
+          <div class="card-body">
+            <div class="card-tags">
+              <span class="tag">React</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">MongoDB</span>
+            </div>
+            <h3 class="card-title">E-Commerce Platform</h3>
+            <p class="card-text">A full-featured online store with payment integration, inventory management, and real-time order tracking.</p>
+            <a href="#" class="card-link">View Project →</a>
+          </div>
+        </article>
+
+        <article class="card fade-in">
+          <div class="card-image" style="background: linear-gradient(135deg, #f093fb, #f5576c);">
+            <span class="card-emoji">📊</span>
+          </div>
+          <div class="card-body">
+            <div class="card-tags">
+              <span class="tag">Python</span>
+              <span class="tag">D3.js</span>
+              <span class="tag">Flask</span>
+            </div>
+            <h3 class="card-title">Analytics Dashboard</h3>
+            <p class="card-text">Interactive data visualization dashboard with real-time charts, custom reports, and automated insights.</p>
+            <a href="#" class="card-link">View Project →</a>
+          </div>
+        </article>
+
+        <article class="card fade-in">
+          <div class="card-image" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">
+            <span class="card-emoji">💬</span>
+          </div>
+          <div class="card-body">
+            <div class="card-tags">
+              <span class="tag">Vue.js</span>
+              <span class="tag">WebSocket</span>
+              <span class="tag">Redis</span>
+            </div>
+            <h3 class="card-title">Chat Application</h3>
+            <p class="card-text">Real-time messaging app with group chats, file sharing, and end-to-end encryption support.</p>
+            <a href="#" class="card-link">View Project →</a>
+          </div>
+        </article>
+
+        <article class="card fade-in">
+          <div class="card-image" style="background: linear-gradient(135deg, #43e97b, #38f9d7);">
+            <span class="card-emoji">🤖</span>
+          </div>
+          <div class="card-body">
+            <div class="card-tags">
+              <span class="tag">Python</span>
+              <span class="tag">TensorFlow</span>
+              <span class="tag">FastAPI</span>
+            </div>
+            <h3 class="card-title">AI Content Generator</h3>
+            <p class="card-text">Machine learning powered tool that generates marketing copy, blog posts, and social media content.</p>
+            <a href="#" class="card-link">View Project →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog -->
+  <section class="section section-alt" id="blog">
+    <div class="container">
+      <h2 class="section-title fade-in">Blog</h2>
+      <p class="section-subtitle fade-in">Thoughts, tutorials, and stories</p>
+      <div class="card-grid">
+
+        <article class="card fade-in">
+          <div class="card-image" style="background: linear-gradient(135deg, #a18cd1, #fbc2eb);">
+            <span class="card-emoji">⚡</span>
+          </div>
+          <div class="card-body">
+            <span class="card-date">Mar 15, 2026</span>
+            <h3 class="card-title">Building Performant Web Apps in 2026</h3>
+            <p class="card-text">Exploring the latest techniques for optimizing Core Web Vitals and delivering lightning-fast user experiences.</p>
+            <a href="#" class="card-link">Read More →</a>
+          </div>
+        </article>
+
+        <article class="card fade-in">
+          <div class="card-image" style="background: linear-gradient(135deg, #ffecd2, #fcb69f);">
+            <span class="card-emoji">🎨</span>
+          </div>
+          <div class="card-body">
+            <span class="card-date">Feb 28, 2026</span>
+            <h3 class="card-title">CSS Architecture for Large Projects</h3>
+            <p class="card-text">How to structure your stylesheets to scale gracefully as your project grows from MVP to enterprise.</p>
+            <a href="#" class="card-link">Read More →</a>
+          </div>
+        </article>
+
+        <article class="card fade-in">
+          <div class="card-image" style="background: linear-gradient(135deg, #a1c4fd, #c2e9fb);">
+            <span class="card-emoji">🔐</span>
+          </div>
+          <div class="card-body">
+            <span class="card-date">Feb 10, 2026</span>
+            <h3 class="card-title">Web Security Best Practices</h3>
+            <p class="card-text">A comprehensive guide to protecting your web applications from common vulnerabilities and attacks.</p>
+            <a href="#" class="card-link">Read More →</a>
+          </div>
+        </article>
+
+        <article class="card fade-in">
+          <div class="card-image" style="background: linear-gradient(135deg, #d4fc79, #96e6a1);">
+            <span class="card-emoji">🚀</span>
+          </div>
+          <div class="card-body">
+            <span class="card-date">Jan 20, 2026</span>
+            <h3 class="card-title">My Journey into Open Source</h3>
+            <p class="card-text">Lessons learned from contributing to open source projects and building a developer community.</p>
+            <a href="#" class="card-link">Read More →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Di Nguyen. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
